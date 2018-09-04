@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Prototyping an xslt transformer",
   "main": "server.js",
-  "cpu":["ia32"],
   "scripts": {
     "build": "npm install",
     "buildAzure": "npm config set [--global] arch ia32 && npm install",
