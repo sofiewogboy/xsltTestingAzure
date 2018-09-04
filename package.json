@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Prototyping an xslt transformer",
   "main": "server.js",
+  "cpu":["ia32"],
   "scripts": {
     "build": "npm install",
     "buildAzure": "npm config set [--global] arch ia32 && npm install",
+    "buildAzure2": "node-gyp rebuild --arch ia32",
     "start": "node server.js",
     "dev": "nodemon server.js",
     "bdev": "nodemon build/backend.js",
