@@ -1,0 +1,34 @@
+{
+  "name": "xsltproto",
+  "version": "1.0.0",
+  "description": "Prototyping an xslt transformer",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "bdev": "nodemon build/backend.js",
+    "loadtest": "loadtest -c 2 --rps 5 http://localhost:4200/test",
+    "build": "webpack --config webpack.config.js",
+    "build2": "funcpack pack ./node_modules/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-functions-pack": "^1.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "*",
+    "gulp": "^3.9.1",
+    "js2xmlparser": "^3.0.0",
+    "libxslt": "^0.6.5",
+    "loadtest": "^3.0.4",
+    "xslt-processor": "^0.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
