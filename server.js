@@ -6,7 +6,7 @@ const app            = express();
 
 
 
-const port = 4200;
+const port = process.env.PORT || 4200;
 app.use(bodyParser.urlencoded({ extended: true }));
 require('./routes')(app, {});
 
