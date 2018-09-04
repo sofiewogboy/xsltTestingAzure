@@ -4,11 +4,11 @@
   "description": "Prototyping an xslt transformer",
   "main": "server.js",
   "scripts": {
+    "build":"npm install",
+    "start": "node server.js",
     "dev": "nodemon server.js",
     "bdev": "nodemon build/backend.js",
-    "loadtest": "loadtest -c 2 --rps 5 http://localhost:4200/test",
-    "build": "webpack --config webpack.config.js",
-    "build2": "funcpack pack ./node_modules/"
+    "loadtest": "loadtest -c 2 --rps 5 http://localhost:4200/test"
   },
   "author": "",
   "license": "ISC",
