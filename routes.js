@@ -16,6 +16,10 @@ module.exports = function(app, db) {
         //console.log(this.xmldoc);
      });
 
+    app.get('/', (req, res) => {
+        res.send('we have some data');
+     });
+
     app.get('/test', (req, res) => {
 
         res.send('Data Recieved');
